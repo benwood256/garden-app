@@ -6,6 +6,9 @@ plant_type = input("Enter your favourite plant: ")
 advice = ""
 
 # Determine advice based on the season
+# depending on what the user set as the season, the advice variable will be updated
+# there is a specific advice set for summer & winter but none for spring & autumn
+# there is nothing stopping someone from entering a string that isn't a season
 if season == "summer":
     advice += "Water your plants regularly and provide some shade.\n"
 elif season == "winter":
@@ -14,6 +17,8 @@ else:
     advice += "No advice for this season.\n"
 
 # Determine advice based on the plant type
+# depending on what the user set as their favourite plant type, the advice variable will be updated
+# if the user specified a unique plant type, there will be a string 'No advice for this type of plant.'
 if plant_type == "flower":
     advice += "Use fertiliser to encourage blooms."
 elif plant_type == "vegetable":
